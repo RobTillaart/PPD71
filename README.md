@@ -164,6 +164,7 @@ Product info
 #### Should
 
 - compatibles?
+- add dump-example
 
 
 #### Could
@@ -171,6 +172,7 @@ Product info
 - add CRC check
 - add error handling
 - implement product info packet
+- add unit tests
 
 
 #### Wont

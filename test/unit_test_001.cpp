@@ -47,7 +47,8 @@ unittest(test_constants)
 
 unittest(test_constructor)
 {
-  PPD71 obj;
+  PPD71 obj(&Serial);
+  //  TODO ?
 }
 
 
