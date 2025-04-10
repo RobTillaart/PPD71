@@ -20,9 +20,12 @@ Arduino library for the PPD71 Particle Sensor Unit.
 
 This library is to use the PPD71 Particle Sensor Unit with an Arduino.
 
+The device provides its measurements through a Serial interface.
+
 Not tested with hardware yet.
 
 Feedback as always is welcome.
+
 
 ### Warning
 
@@ -32,11 +35,15 @@ and any other applications that may cause personal injury due to the product's f
 
 ### Related
 
+- https://www.shinyei.co.jp/stc/eng/products/optical/ppd71.html
+
+Other environment related
+
 - https://www.co2.earth/ - current outdoor CO2 level can be used for calibrating.
 - https://keelingcurve.ucsd.edu/ - historical outdoor CO2 level.
-- https://github.com/RobTillaart/MTP40C
-- https://github.com/RobTillaart/MTP40F
-- https://github.com/RobTillaart/Cozir
+- https://github.com/RobTillaart/MTP40C - CO2
+- https://github.com/RobTillaart/MTP40F - CO2
+- https://github.com/RobTillaart/Cozir - CO2
 
 
 ## Interface
@@ -124,7 +131,7 @@ TODO unknown meaning
 
 ## Start up packet
 
-Not implemented.
+Note this is **NOT** implemented.
 
 The product info is sent at the startup of the device, 
 within the first 2 seconds only (AFAIK).
@@ -156,15 +163,15 @@ Product info
 
 #### Should
 
-- extract more info from packet.
-- implement product info.
+- compatibles?
 
 
 #### Could
 
 - add CRC check
 - add error handling
-- add examples
+- implement product info packet
+
 
 #### Wont
 
